@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Merriweather:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #1f4e5f;
+    --secondary-color: #f4f1ea;
+    --accent-color: #d9a441;
+    --text-color: #222;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    font-family: "Merriweather", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #163946;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem;
+    flex: 1;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: #111;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.5rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0.7rem;
+    text-align: center;
+    background-color: #24587a;
+    color: white;
+}
+
+.about-top {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.about-top img {
+    width: 130px;
+    height: auto;
+}
+
+.about-card h3 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    width: 60%;
+    margin: 0 auto 1rem;
+    padding-bottom: 0.3rem;
+}
+
+.country-info {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1rem;
+    padding: 0 1rem 1rem;
+    align-items: start;
+}
+
+.country-info figure {
+    margin: 0;
+    text-align: center;
+}
+
+.country-info img {
+    width: 140px;
+    height: auto;
+}
+
+.country-info figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.resources-card ul {
+    margin-top: 6rem;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0.4rem;
+}
+
+#lastModified {
+    color: #ffffff;
+}
