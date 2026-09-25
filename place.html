@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Japan through key country facts, a scenic image, and sample weather information.">
+  <meta name="author" content="Israel Lopez">
+  <title>Japan | Country Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Japan</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+
+      <picture>
+  <source
+    media="(min-width: 700px)"
+    srcset="images/japan-hero-large.webp"
+  >
+  
+  <img
+    src="images/japan-hero-small.webp"
+    srcset="
+      images/japan-hero-small.webp 600w,
+      images/japan-hero-large.webp 1200w
+    "
+    sizes="(min-width: 700px) 1200px, 100vw"
+    alt="Mount Fuji, cherry blossoms, and a traditional Japanese pagoda"
+  >
+</picture>
+
+      <section class="card data-card">
+        <h2>Data</h2>
+
+        <dl>
+          <div>
+            <dt>Area:</dt>
+            <dd>377,975 km²</dd>
+          </div>
+
+          <div>
+            <dt>Population:</dt>
+            <dd>About 123 million</dd>
+          </div>
+
+          <div>
+            <dt>Capital:</dt>
+            <dd>Tokyo</dd>
+          </div>
+
+          <div>
+            <dt>Language:</dt>
+            <dd>Japanese</dd>
+          </div>
+
+          <div>
+            <dt>Currency:</dt>
+            <dd>Japanese Yen (JPY)</dd>
+          </div>
+
+          <div>
+            <dt>Time Zone:</dt>
+            <dd>JST (UTC+9)</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="card weather-card">
+
+        <div class="weather-heading">
+          <h2>Weather</h2>
+
+          <img
+            class="weather-icon-mobile"
+            src="images/weather-partly-cloudy.svg"
+            alt="Partly cloudy weather icon"
+          >
+        </div>
+
+        <dl>
+          <div>
+            <dt>Temperature:</dt>
+            <dd><span id="temperature">8</span> °C</dd>
+          </div>
+
+          <div>
+            <dt>Conditions:</dt>
+            <dd>Partly Cloudy</dd>
+          </div>
+
+          <div>
+            <dt>Wind:</dt>
+            <dd><span id="wind-speed">12</span> km/h</dd>
+          </div>
+
+          <div>
+            <dt>Wind Chill:</dt>
+            <dd id="wind-chill">N/A</dd>
+          </div>
+        </dl>
+
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span>
+      Israel Lopez | Japan
+    </p>
+
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
