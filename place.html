@@ -21,24 +21,25 @@
   </header>
 
   <main>
-    <section class="hero">
+  <div class="hero">
 
-      <picture>
-  <source
-    media="(min-width: 700px)"
-    srcset="images/japan-hero-large.webp"
-  >
-  
-  <img
-    src="images/japan-hero-small.webp"
-    srcset="
-      images/japan-hero-small.webp 600w,
-      images/japan-hero-large.webp 1200w
-    "
-    sizes="(min-width: 700px) 1200px, 100vw"
-    alt="Mount Fuji, cherry blossoms, and a traditional Japanese pagoda"
-  >
-</picture>
+    <picture>
+      <source
+        media="(min-width: 700px)"
+        srcset="images/japan-hero-large.webp 1200w"
+        sizes="100vw"
+      >
+
+      <img
+        src="images/japan-hero-small.webp"
+        srcset="
+          images/japan-hero-small.webp 600w,
+          images/japan-hero-large.webp 1200w
+        "
+        sizes="(min-width: 700px) 1200px, 100vw"
+        alt="Mount Fuji, cherry blossoms, and a traditional Japanese pagoda"
+      >
+    </picture>
 
       <section class="card data-card">
         <h2>Data</h2>
@@ -75,6 +76,9 @@
           </div>
         </dl>
       </section>
+
+      </div>
+</main>
 
       <section class="card weather-card">
 
