@@ -13,7 +13,7 @@ currentYear.textContent = new Date().getFullYear();
 lastModified.textContent = `Last Modification: ${document.lastModified}`;
 
 const templeCards = document.querySelector("#temple-cards");
-const pageTitle = document.querySelector("main h2");
+const pageTitle = document.querySelector("main h1");
 
 const homeLink = document.querySelector("#home");
 const oldLink = document.querySelector("#old");
