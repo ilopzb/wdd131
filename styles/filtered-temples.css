@@ -1,0 +1,60 @@
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Temple Grid */
+
+#temple-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Temple Cards */
+
+#temple-cards section {
+    margin: 0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+}
+
+#temple-cards section h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+#temple-cards section p {
+    margin: 0.4rem 0;
+}
+
+#temple-cards section img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    margin-top: 1rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: #243b6b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem;
+}
