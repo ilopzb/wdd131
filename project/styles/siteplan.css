@@ -1,0 +1,245 @@
+:root {
+    --deep-sage: #3f584b;
+    --sage: #728878;
+    --light-sage: #dfe9e2;
+    --mist: #e7eee8;
+    --cream: #f7f3e8;
+    --warm-white: #fffdf8;
+    --soft-gold: #c3a66b;
+    --body-text: #52665a;
+    --border-color: rgb(114 136 120 / 20%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--warm-white);
+    color: var(--body-text);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: var(--deep-sage);
+    color: var(--cream);
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+header p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5rem;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 2rem 1.5rem;
+}
+
+section {
+    border-bottom: 1px solid var(--border-color);
+    padding: 2.5rem 0;
+}
+
+h2 {
+    color: var(--deep-sage);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h3 {
+    color: var(--deep-sage);
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+.site-logo {
+    background-color: var(--cream);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1.5rem 2rem;
+}
+
+.logo-title {
+    color: var(--deep-sage);
+    font-size: 1.6rem;
+}
+
+.logo-tagline {
+    color: var(--sage);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+
+.color-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    margin-top: 2rem;
+}
+
+.color-card {
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+.color-card h3 {
+    margin-top: 0;
+}
+
+.deep-sage {
+    background-color: var(--deep-sage);
+    color: white;
+}
+
+.deep-sage h3,
+.sage h3 {
+    color: white;
+}
+
+.sage {
+    background-color: var(--sage);
+    color: white;
+}
+
+.cream {
+    background-color: var(--cream);
+}
+
+.warm-white {
+    background-color: var(--warm-white);
+}
+
+.soft-gold {
+    background-color: var(--soft-gold);
+    color: #2d3b33;
+}
+
+.typography-example {
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+}
+
+.serif-example {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.sans-example {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wireframe-layout {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+}
+
+.wireframe-column > h3 {
+    text-align: center;
+}
+
+.wireframe {
+    background-color: var(--cream);
+    border: 2px solid var(--deep-sage);
+    padding: 1rem;
+}
+
+.mobile-wireframe {
+    margin: 0 auto;
+    max-width: 340px;
+}
+
+.wire-box {
+    background-color: var(--warm-white);
+    border: 2px solid var(--sage);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero-box {
+    min-height: 240px;
+    padding-top: 3rem;
+}
+
+.reflection-box {
+    min-height: 180px;
+}
+
+.quote-box {
+    background-color: var(--mist);
+    min-height: 110px;
+    padding-top: 2.5rem;
+}
+
+.desktop-header {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.desktop-hero {
+    min-height: 260px;
+    padding-top: 4rem;
+}
+
+.desktop-card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.desktop-two-column {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1.3fr 0.9fr;
+}
+
+footer {
+    background-color: var(--deep-sage);
+    color: var(--cream);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .wireframe-layout {
+        align-items: start;
+        grid-template-columns: 340px 1fr;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .desktop-card-grid,
+    .desktop-two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .desktop-header {
+        flex-direction: column;
+    }
+}
