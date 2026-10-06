@@ -8,11 +8,11 @@ const posts = [
         readTime: "13 min read",
         image: "images/faith-anchored.png",
         alt: "A boat held by an anchor in unsettled water as light breaks through storm clouds",
-        url: "posts/where-is-my-faith-anchored.html",
+        url: "posts/faith-anchored.html",
         description: `A reflection on Job, the storms that test our faith,
         and finding a peace anchored not in our circumstances,
         but in Jesus Christ.`
-    },
+    }
 
     {
         id: "feeding-my-soul",

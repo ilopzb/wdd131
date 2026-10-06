@@ -27,7 +27,7 @@
         </a>
 
         <nav class="main-navigation" aria-label="Main navigation">
-            <a href="index.html">Home</a>
+            <a href="index.html" aria-current="page">Home</a>
             <a href="reflections.html">Reflections</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
@@ -42,7 +42,10 @@
         <section class="hero">
             <div class="hero-content">
                 <p class="hero-introduction">
-                    <span class="breathing-dot"></span>
+                    <span
+                        class="breathing-dot"
+                        aria-hidden="true"
+                    ></span>
                     Remembering His goodness
                 </p>
 
@@ -56,23 +59,23 @@
                 </p>
 
                 <a
-    class="primary-button"
-    id="latest-reflection-link"
-    href="posts/where-is-my-faith-anchored.html"
->
-    Read the latest reflection
-</a>
+                    class="primary-button"
+                    id="latest-reflection-link"
+                    href="posts/faith-anchored.html"
+                >
+                    Read the latest reflection
+                </a>
             </div>
 
             <div
-    class="decorative-leaf leaf-one"
-    aria-hidden="true"
-></div>
+                class="decorative-leaf leaf-one"
+                aria-hidden="true"
+            ></div>
 
-<div
-    class="decorative-leaf leaf-two"
-    aria-hidden="true"
-></div>
+            <div
+                class="decorative-leaf leaf-two"
+                aria-hidden="true"
+            ></div>
         </section>
 
         <section class="reflections-section" id="reflections">
@@ -89,15 +92,18 @@
             ></div>
         </section>
 
-        <div class="quote-section" id="faith">
+        <section class="quote-section" id="faith">
             <blockquote>
                 “Perhaps peace does not always arrive by changing our
                 circumstances, but by reminding our hearts that we do not
                 walk through them alone.”
             </blockquote>
 
-            <div class="quote-divider"></div>
-        </div>
+            <div
+                class="quote-divider"
+                aria-hidden="true"
+            ></div>
+        </section>
 
         <section class="home-closing">
             <div class="home-closing-text">
@@ -157,14 +163,14 @@
             </div>
         </section>
 
-        <div class="pause-message" hidden>
+        <section class="pause-message" hidden>
             <p class="eyebrow">One quiet moment</p>
 
             <p class="pause-quote">
                 Pause for a moment. Where have you noticed God's goodness
                 in your life today?
             </p>
-        </div>
+        </section>
     </main>
 
     <footer class="site-footer">
