@@ -1,6 +1,5 @@
 const posts = [
     {
-        id: "faith-anchored",
         title: "Where Is My Faith Anchored?",
         date: "August 19, 2026",
         dateValue: "2026-08-19",
@@ -12,10 +11,9 @@ const posts = [
         description: `A reflection on Job, the storms that test our faith,
         and finding a peace anchored not in our circumstances,
         but in Jesus Christ.`
-    }
+    },
 
     {
-        id: "feeding-my-soul",
         title: "What Is Feeding My Soul?",
         date: "August 15, 2026",
         dateValue: "2026-08-15",
@@ -29,7 +27,6 @@ const posts = [
     },
 
     {
-        id: "leaving-behind",
         title: "What Am I Willing to Leave Behind?",
         date: "August 13, 2026",
         dateValue: "2026-08-13",
