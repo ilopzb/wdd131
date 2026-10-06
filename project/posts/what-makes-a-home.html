@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="POST DESCRIPTION"
+    >
+
+    <meta name="author" content="Israel López">
+
+    <meta
+        property="og:title"
+        content="POST TITLE | Tender Mercies"
+    >
+
+    <meta
+        property="og:description"
+        content="POST DESCRIPTION"
+    >
+
+    <meta property="og:type" content="article">
+
+    <meta
+        property="og:image"
+        content="https://ilopzb.github.io/Israel-Lopez/images/POST-IMAGE.png"
+    >
+
+    <meta
+        property="og:url"
+        content="https://ilopzb.github.io/Israel-Lopez/posts/POST-FILENAME.html"
+    >
+
+    <meta property="og:site_name" content="Tender Mercies">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>POST TITLE | Tender Mercies</title>
+
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body class="post-page">
+
+    <header class="site-header">
+        <a class="site-brand" href="../index.html">
+            <span class="site-title">Tender Mercies</span>
+            <span class="site-tagline">Thoughts for quiet hearts</span>
+        </a>
+
+        <nav class="main-navigation" aria-label="Main navigation">
+            <a href="../index.html">Home</a>
+            <a href="../blog.html">Reflections</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+
+        <button class="pause-button" type="button">
+            Take a pause
+        </button>
+    </header>
+
+    <main>
+        <article>
+            <header class="post-header">
+                <p class="post-meta">
+                    CATEGORY · DATE · READ TIME
+                </p>
+
+                <h1>POST TITLE</h1>
+
+                <p class="post-introduction">
+                    POST INTRODUCTION
+                </p>
+            </header>
+
+            <div class="post-content">
+
+                <!--
+                    Paste the reflection content here.
+
+                    Common patterns:
+
+                    <h2>Section Heading</h2>
+
+                    <p>
+                        Paragraph text.
+                    </p>
+
+                    <blockquote>
+                        Scripture text.
+
+                        <cite>Scripture Reference</cite>
+                    </blockquote>
+
+                    <p class="reflection-question">
+                        Reflection question.
+                    </p>
+                -->
+
+                <aside class="weekly-invitation">
+                    <p class="invitation-label">
+                        An invitation to carry with you this week
+                    </p>
+
+                    <p>
+                        WEEKLY INVITATION
+                    </p>
+                </aside>
+
+                <a class="back-link" href="../blog.html">
+                    ← Back to all reflections
+                </a>
+            </div>
+        </article>
+
+        <div class="pause-message" hidden>
+            <p class="eyebrow">One quiet moment</p>
+
+            <p class="pause-quote">
+                Pause for a moment. Where have you noticed God's goodness
+                in your life today?
+            </p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <p class="footer-title">Tender Mercies</p>
+                <p class="footer-tagline">Thoughts for quiet hearts</p>
+            </div>
+
+            <nav class="footer-navigation" aria-label="Footer navigation">
+                <a href="../index.html">Home</a>
+                <a href="../blog.html">Reflections</a>
+                <a href="../about.html">About</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div class="footer-bottom">
+            <div>
+                <p>Written with faith and honesty by Israel López.</p>
+
+                <p class="footer-disclaimer">
+                    Tender Mercies is a personal blog and is not an official
+                    publication of
+                    <a
+                        href="https://www.churchofjesuschrist.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        The Church of Jesus Christ of Latter-day Saints.
+                    </a>
+                </p>
+            </div>
+
+            <p>&copy; 2026 Tender Mercies</p>
+        </div>
+    </footer>
+
+    <script>
+        const pauseButton = document.querySelector(".pause-button");
+        const pauseMessage = document.querySelector(".pause-message");
+
+        pauseButton.addEventListener("click", function () {
+            const messageIsHidden = pauseMessage.hidden;
+
+            pauseMessage.hidden = !messageIsHidden;
+
+            if (messageIsHidden) {
+                pauseButton.textContent = "Return to the page";
+
+                pauseMessage.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+            } else {
+                pauseButton.textContent = "Take a pause";
+            }
+        });
+    </script>
+
+</body>
+</html>
